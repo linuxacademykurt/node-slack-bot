@@ -22,3 +22,5 @@ We're going to create a Slack Bot that utilizes [Claudia.js, a Node.js package](
   aws_access_key_id = YOUR_USERS_ACCESS_KEY_ID
   aws_secret_access_key = YOUR_USERS_SECRET_ACCESS_KEY
   ```
+5. Create a new directory to house your project if you haven't already: `mkdir node-slack-bot` and then `cd node-slack-bot`. Now run `npm init --yes`, the yes flag just tells the init command to accept all the default values.
+6. Now let's install Claudia.js globally by running `npm install claudia -g`. Verify that it installed correctly and is at least version 1.4.0 or greater by running `claudia -v`. Now, let's install the Claudia.js bot builder directly to our project. Make sure you're in your project directory (node-slack-bot), and run `npm install claudia-bot-builder --save`
