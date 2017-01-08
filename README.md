@@ -15,3 +15,10 @@ We're going to create a Slack Bot that utilizes [Claudia.js, a Node.js package](
   * On this screen, choose to _Attach existing policies directly_, we're going to want to attach the following three policies by searching for them one at a time and clicking the checkbox next to them:
     * AWSLambdaFullAccess, IAMFullAccess and AmazonAPIGatewayAdministrator.
   * Click _Next: Review_, and if you see the three policies, choose to _Create User_.
+  * Now that you have created the user, you're going to want to store them on your local machine. If you don't already have a local AWS credentials file, create one - On Mac or Linux, it'll be at ~/.aws/credentials, on Windows it'll be C:\Users\YOUR_USER_NAME\.awscredentials
+  * Enter the following in the credentials file, replacing the placeholder values with the values you can view after creating the IAM user.
+  ```
+  [slackbot]
+  aws_access_key_id = YOUR_USERS_ACCESS_KEY_ID
+  aws_secret_access_key = YOUR_USERS_SECRET_ACCESS_KEY
+  ```
