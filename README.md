@@ -9,8 +9,9 @@ We're going to create a Slack Bot that utilizes [Claudia.js, a Node.js package](
   * For Linux, find the appropriate download in the list, or check your Linux distribution's package manager for Node 4.3.2.
   * If you already have a different, newer version of Node.js installed on your machine, download the [Node Version Manager](https://github.com/creationix/nvm/blob/master/README.markdown) from:
 3. Now that we have Node installed on our local machine or server lab, we'll want to install the Claudia.JS deployment tool globally by running the following command: npm install claudia -g
-4. Now sign up for a [free AWS account](https://aws.amazon.com/). Once logged in to the AWS Console, click on your name and click *Manage Security Credentials*.
-  * You should be prompted with an option to "Continue to Security Credentials", or "Get Started with IAM Users". Choose the second option, *Get Started with IAM Users*.
-  * Click the Add User button and name it something simple and easy to remember, like "slackbot", and choose to give it _Programmatic accesss_. Click *Next: Permissions*.
-  * On this screen, choose to *Attach existing policies directly*, we're going to want to attach:
+4. Now sign up for a [free AWS account](https://aws.amazon.com/). Once logged in to the AWS Console, click on your name and click _Manage Security Credentials_.
+  * You should be prompted with an option to "Continue to Security Credentials", or "Get Started with IAM Users". Choose the second option, _Get Started with IAM Users_.
+  * Click the Add User button and name it something simple and easy to remember, like "slackbot", and choose to give it _Programmatic accesss_. Click _Next: Permissions_.
+  * On this screen, choose to _Attach existing policies directly_, we're going to want to attach the following three policies by searching for them one at a time and clicking the checkbox next to them:
     * AWSLambdaFullAccess, IAMFullAccess and AmazonAPIGatewayAdministrator.
+  * Click _Next: Review_, and if you see the three policies, choose to _Create User_.
